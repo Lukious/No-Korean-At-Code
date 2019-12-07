@@ -19,9 +19,10 @@ def isHangul(text):
 # for Test
 if __name__ == '__main__':
     i = 0
-    #filename = input("Input file name:")
-    filename = 'example.txt'
+    filename = input("Input file name:")
+    #filename = 'example.txt'
     f = open(filename, 'r',encoding='UTF-8')
+    w_f = open('KoreanRemoved_'+filename, 'w',encoding='UTF-8')
     while True:
         line = f.readline()
         if not line: break
@@ -37,5 +38,9 @@ if __name__ == '__main__':
             i += 1
         i = 0
         list2str = ''.join(splitedline)
+        list2str = ''.join(splitedline)
+        w_f.write(list2str + '\n')
         print(list2str)
+        
     f.close()   
+    w_f.close()

@@ -22,9 +22,10 @@ def isHangul(text):
 if __name__ == '__main__':
     translator = Translator()
     i = 0
-    #filename = input("Input file name:")
-    filename = 'example.txt'
+    filename = input("Input file name:")
+    #filename = 'example.cpp'
     f = open(filename, 'r',encoding='UTF-8')
+    w_f = open('Translated_'+filename, 'w',encoding='UTF-8')
     while True:
         line = f.readline()
         if not line: break
@@ -46,5 +47,8 @@ if __name__ == '__main__':
             i += 1
         i = 0
         list2str = ''.join(splitedline)
+        w_f.write(list2str + '\n')
         print(list2str)
-    f.close()   
+        
+    f.close()
+    w_f.close()
