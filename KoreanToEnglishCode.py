@@ -1,5 +1,7 @@
 import sys
 import re
+from googletrans import Translator
+
 
 def isHangul(text):
     #Check the Python Version
@@ -18,6 +20,7 @@ def isHangul(text):
 
 # for Test
 if __name__ == '__main__':
+    translator = Translator()
     i = 0
     #filename = input("Input file name:")
     filename = 'example.txt'
@@ -33,7 +36,13 @@ if __name__ == '__main__':
             else :
                 splitedline[i] = splitedline[i]+' '
             if isHangul(splitedline[i]) == True:
-                splitedline[i] = ''
+                temp = ''.join(splitedline[i:])
+                splitedline = ''.join(splitedline[0:i])
+                tr_results = translator.translate(temp)
+                splitedline = splitedline + tr_results.text
+                #print(splitedline)
+                break
+            
             i += 1
         i = 0
         list2str = ''.join(splitedline)
