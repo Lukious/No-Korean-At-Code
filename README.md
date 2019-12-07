@@ -6,9 +6,9 @@ Handle Korean At code file
 Delete Korean at Code
 
 
-#Working
+# Working
 Let Remain Tab levels
 
 
-#TODO
+# TODO
 Auto Translate 
