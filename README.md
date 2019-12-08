@@ -4,11 +4,11 @@ Handle Korean At code file
 
 # Implemeted
 Delete Korean at Code
-
+Let Remain Tab levels
+Auto Translate 
 
 # Working
-Let Remain Tab levels
-
+Let possible to edit .py format file (Now only possible for .c and .cpp format file)
 
 # TODO
-Auto Translate 
+Mulyiplr file translating (To target dir) 
