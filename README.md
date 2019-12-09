@@ -1,13 +1,13 @@
 # No-Korean-At-Code
 NKAC Project
 Translate or Remove Korean At code file
+
 Support file : .txt / .cpp / .c / .html / .css 
 
 # How to use?
 ### install google translate library
 ```
 pip install googletrans
-
 ```
 ### Run file
 ```
@@ -110,5 +110,7 @@ Auto Translate
 ### Working
 Let possible to edit .py format file (Now only possible for .c and .cpp format file)
 
+Not support .py yet
+
 ### TODO
-Mulyiplr file translating (To target dir) 
+Multi file translating (To target dir) 
