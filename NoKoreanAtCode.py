@@ -21,8 +21,8 @@ if __name__ == '__main__':
     i = 0
     filename = input("Input file name:")
     #filename = 'example.txt'
-    f = open(filename, 'r',encoding='UTF-8')
-    w_f = open('KoreanRemoved_'+filename, 'w',encoding='UTF-8')
+    f = open('./code/'+filename, 'r',encoding='UTF-8')
+    w_f = open('./code/KoreanRemoved_'+filename, 'w',encoding='UTF-8')
     while True:
         line = f.readline()
         if not line: break
