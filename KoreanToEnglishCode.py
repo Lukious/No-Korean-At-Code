@@ -18,7 +18,6 @@ def isHangul(text):
     hanCount = len(re.findall(u'[\u3130-\u318F\uAC00-\uD7A3]+', encText))
     return hanCount > 0
 
-# for Test
 if __name__ == '__main__':
     translator = Translator()
     i = 0
@@ -43,12 +42,11 @@ if __name__ == '__main__':
                 splitedline = splitedline + tr_results.text
                 #print(splitedline)
                 break
-            
             i += 1
         i = 0
         list2str = ''.join(splitedline)
         w_f.write(list2str + '\n')
         print(list2str)
-        
     f.close()
     w_f.close()
+print('DONE!')

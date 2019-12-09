@@ -16,7 +16,6 @@ def isHangul(text):
     hanCount = len(re.findall(u'[\u3130-\u318F\uAC00-\uD7A3]+', encText))
     return hanCount > 0
 
-# for Test
 if __name__ == '__main__':
     i = 0
     filename = input("Input file name:")
@@ -44,3 +43,4 @@ if __name__ == '__main__':
         
     f.close()   
     w_f.close()
+print('DONE!')
