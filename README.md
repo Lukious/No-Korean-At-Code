@@ -106,11 +106,10 @@ int bellman_ford(int excute_num) {// Bellman-Ford algorithm
 Delete Korean at Code
 Let Remain Tab levels
 Auto Translate 
+Supporting Cheked( .py , .cpp , .c , .txt , .java , .html , .style)
 
 ### Working
-Let possible to edit .py format file (Now only possible for .c and .cpp format file)
-
-Not support .py yet
+Multi file translating (To target dir) 
 
 ### TODO
-Multi file translating (To target dir) 
+?
