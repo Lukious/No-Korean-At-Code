@@ -2,7 +2,7 @@
 NKAC Project
 Translate or Remove Korean At code file
 
-Support file : .txt / .cpp / .c / .html / .css 
+Support file : .txt / .cpp / .py  / .c / .html / .css 
 
 # How to use?
 ### install google translate library
@@ -106,7 +106,8 @@ int bellman_ford(int excute_num) {// Bellman-Ford algorithm
 Delete Korean at Code
 Let Remain Tab levels
 Auto Translate 
-Supporting Cheked( .py , .cpp , .c , .txt , .java , .html , .style)
+
+Supporting Cheked( .py , .cpp , .c , .txt , .java , .html , .css)
 
 ### Working
 Multi file translating (To target dir) 
